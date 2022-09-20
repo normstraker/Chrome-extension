@@ -82,8 +82,8 @@ function render(leads) {
 // NaN
 
 // trick to determine whether a value is true or false
-let trueOrFalse = Boolean("");
-console.log(trueOrFalse);
+// let trueOrFalse = Boolean("");
+// console.log(trueOrFalse);
 
 // \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -99,42 +99,151 @@ console.log(trueOrFalse);
 
 // \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
+// Create a function that takes a single parameter, an array,
+// and logs all the items of the array to the console.
+// Call the function while passing in myCourses as an argument
+
+// let myCourses = [
+//   "Learn CSS Animations",
+//   "UI Design Fundamentals",
+//   "Intro to Clean Code",
+// ];
+
+// function logItems(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+//   }
+// }
+
+// logItems(myCourses); // passing in myCourses as the argument
+
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
 // Create a function, add(), that adds two numbers together and returns the sum
 // function add(num1, num2){
-  //     return num1 + num2
-  // }
-  
-  // console.log( add(3, 4)   ) // should log 7
-  // console.log( add(9, 102) ) // should log 111
-  
-  // \\\\\\\\\\\\\\\
-  
-  // let arr = [1, 2, 3];
-  
-  // function getFirst(arr) {
-    //   return arr;
-    // }
-    
-    // console.log(arr[0]);
+//     return num1 + num2
+// }
 
-    // \\\\\\\\\\\\\\\
+// console.log( add(3, 4)   ) // should log 7
+// console.log( add(9, 102) ) // should log 111
 
-    // function getFirst(arr) {
-    //   return arr[0];
-    // }
+// \\\\\\\\\\\\\\\
 
-    // let firstCard = getFirst([10, 2, 5]);
+// let arr = [1, 2, 3];
 
-    // console.log(firstCard);
+// function getFirst(arr) {
+//   return arr;
+// }
 
-    // \\\\\\\\\\\\\\\\\\\\\\\\\\\
-    
-    // Grab the URL of the current tab!
-    // chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-      
-      //  // since only one tab should be active and in the current window at once
-      //  // the return variable should only have one entry
-      //  let activeTab = tabs[0];
-      //  let activeTabId = activeTab.id; // or do whatever you need
-      
-      // \\\\\\\\\\\\\\\\\\\\\\\\\\\
+// console.log(arr[0]);
+
+// \\\\\\\\\\\\\\\
+
+// function getFirst(arr) {
+//   return arr[0];
+// }
+
+// let firstCard = getFirst([10, 2, 5]);
+
+// console.log(firstCard);
+
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// Grab the URL of the current tab!
+// chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+
+//  // since only one tab should be active and in the current window at once
+//  // the return variable should only have one entry
+//  let activeTab = tabs[0];
+//  let activeTabId = activeTab.id; // or do whatever you need
+
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// let data = [
+//   {
+//     player: "Jane",
+//     score: 52,
+//   },
+//   {
+//     player: "Mark",
+//     score: 41,
+//   },
+// ];
+
+// const logScore = document.querySelector("#log-score");
+
+// logScore.addEventListener("click", function () {
+//   console.log(data[0].player, data[0].score);
+// });
+
+// "Jane", 52
+
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// The generateSentence(desc, arr) takes two parameterer: a description and an array.
+// It should return a string based upon the description and array.
+
+// Example 1: if you pass in "largest countries",and ["China", "India", "USA"],
+// it should return the string: "The 3 largest countries are China, India, USA"
+
+// Example 2: If you pass in "best fruits" and ["Apples", "Bananas"], it should return:
+// "The 2 best fruits are Apples, Bananas"
+
+// function generateSentence(desc, arr) {
+
+//   let sentence = `My ${arr.length} favorite ${desc} are `
+//   const lastIndex = arr.length - 1
+//   for (let i = 0; i < arr.length; i++){
+//     if (i === lastIndex) {
+//       sentence += arr[i] + "."
+//     } else {
+//       sentence += arr[i] + ", "
+//     }
+//   }
+
+//   return sentence
+// }
+
+// const compSentence = generateSentence("instruments", ["saxophone","classical guitar", "violin"])
+
+// console.log(compSentence)
+
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// Create a function that renders the three team images
+// Use a for loop, template strings (``), plus equals (+=)
+// .innerHTML to solve the challenge.
+
+// const imgEl = document.querySelector("#container");
+
+// const imgs = ["images/hip1.jpg", "images/hip2.jpg", "images/hip3.jpg"];
+
+// function render() {
+//   let imgItems = "";
+//   for (let i = 0; i < imgs.length; i++) {
+//     imgItems += `
+//         <img class="team-img" alt="company employees" src="${imgs[i]}">
+//         `;
+//   }
+//   imgEl.innerHTML = imgItems;
+// }
+// render();
+
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// Challenge:
+// Round the price in the button down to two decimal places.
+// Don't know which method to use? Google it!
+
+// const totalPrice = 420.69235632455
+// const btn = document.getElementById("purchase-btn")
+// btn.textContent = `Buy €${ totalPrice.toFixed(2) }`
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// const oldNum = 12345.6789
+// console.log(oldNum.toFixed(3)) // 12345.679
+// const newNum = (Number("123.456")); // string
+// console.log(newNum.toFixed(2)) // 123.46
+
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
